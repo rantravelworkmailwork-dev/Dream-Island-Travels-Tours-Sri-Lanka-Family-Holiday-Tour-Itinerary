@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Lanka Family Holiday – August 2027 | 12 Days</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar site-nav sticky-top shadow-sm">
+    <div class="container-fluid container-lg d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center gap-3 text-wrap m-0" href="#">
+        <img src="images/dream island logo.jpeg" alt="Dream Island Travels Logo" class="brand-logo" />
+        <div>
+          <span class="brand-title">Dream Island Travels &amp; Tours Pvt Ltd</span>
+          <span class="brand-subtitle">Tailor-Made Holidays across Sri Lanka</span>
+        </div>
+      </a>
+      <div class="d-none d-lg-block nav-motto">Your Dream, Our Destination</div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero-kicker">FAMILY HOLIDAY PACKAGE • SRI LANKA</p>
+      <h1>Sri Lanka Family Holiday</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-tagline">A 12-day journey through ancient cities, hill country, wildlife and the southern coast, with hotel stays and meals included.</p>
+      <div class="hero-meta">
+        <span>Itinerary Prepared for: Angélique Liogier</span>
+        <span>Market: France</span>
+        <span>11 Nights / 12 Days</span>
+        <span>August 2027</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- INTRO -->
+    <section class="luxe-card accent">
+      <h3 class="section-title">Sri Lanka Family Holiday &ndash; August 2027</h3>
+      <p class="section-sub">Tailored for 04 Adults &bull; 11 Nights / 12 Days</p>
+      <p class="intro-lead">Experience the best of Sri Lanka with comfortable hotel stays, carefully planned experiences and transport throughout your 12-day journey.</p>
+      <p class="intro-body mb-2">This package covers hotel accommodation with the meal plans listed below, and transportation according to the itinerary. Entrance tickets, safari jeep charges and train tickets are payable separately.</p>
+    </section>
+
+    <!-- KEY FACTS -->
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-md-3"><div class="fact"><span class="fact-label">Tour Name</span><span class="fact-value">Sri Lanka Family Holiday</span><span class="fact-note">Hotels, Meals &amp; Transport</span></div></div>
+      <div class="col-6 col-md-3"><div class="fact"><span class="fact-label">Duration</span><span class="fact-value">11N / 12D</span><span class="fact-note">August 2027</span></div></div>
+      <div class="col-6 col-md-3"><div class="fact"><span class="fact-label">Group Size</span><span class="fact-value">04 Pax (Adults)</span><span class="fact-note">Adults</span></div></div>
+      <div class="col-12 col-md-3"><div class="fact"><span class="fact-label">Package Price</span><span class="fact-value">EUR 1,126</span><span class="fact-note">Per person</span></div></div>
+    </div>
+
+    <!-- MAP -->
+    <section class="luxe-card">
+      <h4 class="section-title">Your Route</h4>
+      <p class="section-sub">Tap any pin to explore destinations along your 12-day journey.</p>
+      <div id="sri-lanka-map"></div>
+    </section>
+
+    <!-- ITINERARY -->
+    <section class="mb-4">
+      <h4 class="mb-3">Day-by-Day Itinerary</h4>
+
+      <div class="accordion" id="itineraryAccordion">
+
+        <!-- Day 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#day1">
+              <span class="day-no">Day 1</span> Airport Pickup &amp; Transfer to Sigiriya
+            </button>
+          </h2>
+          <div id="day1" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-12">
+                  <p>Upon arrival at Bandaranaike International Airport, meet our representative and transfer to Sigiriya. Check in at Kassapa Lion Rock Hotel and enjoy a relaxing day after your flight.</p>
+                  <div>
+                    <span class="tag">🤝 Airport Pick-Up</span>
+                    <span class="tag">🚗 Transfer to Sigiriya</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Sigiriya &mdash; Kassapa Lion Rock (Half Board)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day2">
+              <span class="day-no">Day 2</span> Traditional Village Experience &amp; Polonnaruwa
+            </button>
+          </h2>
+          <div id="day2" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, enjoy a traditional village experience in Hiriwadunna, including a Land master ride, a village walk and a traditional Sri Lankan lunch.</p>
+                  <p>In the afternoon, visit Polonnaruwa Ancient City, a UNESCO World Heritage Site, and explore its historical ruins, ancient temples and monuments.</p>
+                  <div>
+                    <span class="tag">🚜 Hiriwadunna Village Experience</span>
+                    <span class="tag">🍛 Traditional Sri Lankan Lunch</span>
+                    <span class="tag">🏛️ Polonnaruwa Ancient City</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Sigiriya &mdash; Kassapa Lion Rock (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/polonnaruwa.png" alt="Day 2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day3">
+              <span class="day-no">Day 3</span> Sigiriya Lion Rock &amp; Ayurvedic Massage
+            </button>
+          </h2>
+          <div id="day3" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>Early morning visit to the famous Sigiriya Lion Rock Fortress, a UNESCO World Heritage Site. Enjoy the spectacular views and explore this remarkable ancient kingdom.</p>
+                  <p>Return to the hotel and relax. In the afternoon, enjoy a traditional Ayurvedic massage.</p>
+                  <div>
+                    <span class="tag">🥾 Sigiriya Lion Rock Fortress</span>
+                    <span class="tag">💆 Traditional Ayurvedic Massage</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Sigiriya &mdash; Kassapa Lion Rock (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/sigiriya.jpg" alt="Day 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day4">
+              <span class="day-no">Day 4</span> Dambulla Cave Temple &amp; Cultural Dance Show
+            </button>
+          </h2>
+          <div id="day4" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, visit the Dambulla Royal Cave Temple, a UNESCO World Heritage Site, famous for its ancient Buddhist paintings and impressive Buddha statues.</p>
+                  <p>In the afternoon, enjoy a traditional Sri Lankan cultural dance performance.</p>
+                  <div>
+                    <span class="tag">🛕 Dambulla Royal Cave Temple</span>
+                    <span class="tag">💃 Cultural Dance Show</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Sigiriya &mdash; Kassapa Lion Rock (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/cultureshow.jpg" alt="Day 4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day5">
+              <span class="day-no">Day 5</span> Spice Garden &amp; Kandy City Tour
+            </button>
+          </h2>
+          <div id="day5" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, check out and travel towards Kandy. En route, visit a traditional Spice Garden in Matale and learn about Sri Lanka's famous spices and Ayurvedic herbs.</p>
+                  <p>In the afternoon, visit the Temple of the Sacred Tooth Relic, one of Sri Lanka's most important Buddhist religious sites. Enjoy a relaxing walk around Kandy Lake.</p>
+                  <div>
+                    <span class="tag">🌶️ Matale Spice Garden</span>
+                    <span class="tag">🛕 Temple of the Sacred Tooth Relic</span>
+                    <span class="tag">🚶 Kandy Lake Walk</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Kandy &mdash; Thilanka Hotel (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/templeoftooth.jpg" alt="Day 5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day6">
+              <span class="day-no">Day 6</span> Tea Plantation, Tea Factory &amp; Ramboda Falls
+            </button>
+          </h2>
+          <div id="day6" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, travel towards Nuwara Eliya through beautiful mountain scenery.</p>
+                  <p>Visit a tea plantation and tea factory to discover how world-famous Ceylon Tea is produced. Continue to Ramboda Falls to enjoy the beautiful waterfall and surrounding scenery.</p>
+                  <div>
+                    <span class="tag">☕ Tea Plantation &amp; Factory</span>
+                    <span class="tag">🌊 Ramboda Falls</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Nuwara Eliya &mdash; Araliya Red (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/Vibrant Tea Terraces and Waterfall Harvest.png" alt="Day 6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day7">
+              <span class="day-no">Day 7</span> Scenic Train Journey to Ella
+            </button>
+          </h2>
+          <div id="day7" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, transfer to Nanu Oya Railway Station and enjoy one of the world's most beautiful scenic train journeys to Ella, passing through lush green tea plantations, mountains and picturesque villages.</p>
+                  <p>Upon arrival, transfer to Ella Flower Garden Hotel and relax.</p>
+                  <div>
+                    <span class="tag">🚂 Scenic Train Ride to Ella</span>
+                  </div>
+                  <p class="small fst-italic mt-2 mb-0">Please note: Train tickets are subject to availability.</p>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Ella &mdash; Ella Flower Garden (Bed &amp; Breakfast)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/trainride.png" alt="Day 7" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day8">
+              <span class="day-no">Day 8</span> Nine Arch Bridge &amp; Little Adam's Peak
+            </button>
+          </h2>
+          <div id="day8" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, explore the famous Nine Arch Bridge, one of the most photographed attractions in Sri Lanka.</p>
+                  <p>Continue to Little Adam's Peak for a beautiful nature walk and breathtaking panoramic views of the Ella mountains. Enjoy the relaxed atmosphere of Ella.</p>
+                  <div>
+                    <span class="tag">🌉 Nine Arch Bridge</span>
+                    <span class="tag">🥾 Little Adam's Peak</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Ella &mdash; Ella Flower Garden (Bed &amp; Breakfast)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/ninearch.jpg" alt="Day 8" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day9">
+              <span class="day-no">Day 9</span> Ravana Falls &amp; Yala National Park Safari
+            </button>
+          </h2>
+          <div id="day9" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, check out and travel towards Yala. En route, visit the beautiful Ravana Falls.</p>
+                  <p>In the afternoon, enjoy an exciting wildlife safari in Yala National Park, where you may have the opportunity to see elephants, crocodiles, deer, bears and the famous Sri Lankan leopard.</p>
+                  <div>
+                    <span class="tag">🌊 Ravana Falls</span>
+                    <span class="tag">🐆 Yala National Park Safari</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Yala &mdash; Tamarind Tree Hotel (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/yala.jpg" alt="Day 9" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day10">
+              <span class="day-no">Day 10</span> Transfer to Hikkaduwa &amp; Beach Relaxation
+            </button>
+          </h2>
+          <div id="day10" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, travel towards Hikkaduwa on the southern coast of Sri Lanka.</p>
+                  <p>Check in at Hikka Tranz by Cinnamon and enjoy the swimming pool, beach and relaxing tropical atmosphere.</p>
+                  <div>
+                    <span class="tag">🚗 Drive to Hikkaduwa</span>
+                    <span class="tag">🏖️ Beach &amp; Pool Relaxation</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Hikkaduwa &mdash; Hikka Tranz by Cinnamon (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/beach.jpg" alt="Day 10" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 11 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day11">
+              <span class="day-no">Day 11</span> Madu River Boat Safari, Turtle Hatchery &amp; Galle Fort
+            </button>
+          </h2>
+          <div id="day11" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                  <p>After breakfast, enjoy a scenic boat ride along the Madu River, exploring its beautiful mangroves and small islands.</p>
+                  <p>Visit a sea turtle hatchery and learn about local turtle conservation efforts.</p>
+                  <p>In the evening, explore the historic Galle Fort, a UNESCO World Heritage Site, with its charming streets, colonial architecture, cafés and beautiful ocean views. Return to the hotel in Hikkaduwa.</p>
+                  <div>
+                    <span class="tag">🚤 Madu River Boat Safari</span>
+                    <span class="tag">🐢 Sea Turtle Hatchery</span>
+                    <span class="tag">🏰 Galle Fort</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Overnight:</strong> Hikkaduwa &mdash; Hikka Tranz by Cinnamon (Half Board)</div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="day-photo-grid">
+                    <img src="images/gallefort.jpg" alt="Day 11" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 12 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#day12">
+              <span class="day-no">Day 12</span> Departure Transfer to Airport
+            </button>
+          </h2>
+          <div id="day12" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-12">
+                  <p>After breakfast, check out from the hotel and transfer to Bandaranaike International Airport for your departure flight.</p>
+                  <p>End of a wonderful Sri Lankan holiday!</p>
+                  <div>
+                    <span class="tag">✈️ Airport Transfer</span>
+                  </div>
+                  <div class="stay-info mt-2"><strong>Departure Transfer:</strong> Transfer to Bandaranaike International Airport after breakfast.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACCOMMODATION -->
+    <section class="luxe-card">
+      <h4 class="section-title">Your Hotel Accommodation</h4>
+      <p class="section-sub">Overnight Stays &bull; August 2027 &bull; 11 nights &bull; Prepared for Angélique Liogier</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Sigiriya</h5><span>04 Nights &bull; Days 1&ndash;4</span></div>
+            <ul class="hotel-list"><li>Kassapa Lion Rock &bull; Half Board (HB)</li></ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Kandy</h5><span>01 Night &bull; Day 5</span></div>
+            <ul class="hotel-list"><li>Thilanka Hotel &bull; Half Board (HB)</li></ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Nuwara Eliya</h5><span>01 Night &bull; Day 6</span></div>
+            <ul class="hotel-list"><li>Araliya Red &bull; Half Board (HB)</li></ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Ella</h5><span>02 Nights &bull; Days 7&ndash;8</span></div>
+            <ul class="hotel-list"><li>Ella Flower Garden &bull; Bed &amp; Breakfast (BB)</li></ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Yala</h5><span>01 Night &bull; Day 9</span></div>
+            <ul class="hotel-list"><li>Tamarind Tree Hotel &bull; Half Board (HB)</li></ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hotel-card">
+            <div class="hotel-head"><h5>Hikkaduwa</h5><span>02 Nights &bull; Days 10&ndash;11</span></div>
+            <ul class="hotel-list"><li>Hikka Tranz by Cinnamon &bull; Half Board (HB)</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCLUSIONS / EXCLUSIONS -->
+    <section class="luxe-card">
+      <h4 class="mb-3">Package Details</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="package-box">
+            <h5>The package includes</h5>
+            <ul class="package-list">
+              <li>Hotel accommodation as mentioned above.</li>
+              <li>Half Board (breakfast &amp; dinner) at all hotels except Ella.</li>
+              <li>Bed &amp; Breakfast at Ella Flower Garden for 2 nights.</li>
+              <li>Transportation according to the itinerary.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="package-box excluded">
+            <h5>The package does not include</h5>
+            <ul class="package-list">
+              <li>Entrance tickets to attractions and historical sites.</li>
+              <li>Safari jeep charges at Yala National Park.</li>
+              <li>Train tickets to Ella.</li>
+              <li>Personal expenses and other optional activities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 mb-1"><strong>Please note:</strong> All entrance tickets and activity fees are payable separately by guests.</p>
+      <p class="mb-0 fst-italic">We look forward to welcoming you to beautiful Sri Lanka !</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="agency-footer">
+    <div class="container px-3">
+      <div class="footer-top-row">
+        <div class="d-flex align-items-center gap-3">
+          <img src="images/dream island logo.jpeg" alt="Dream Island Logo" class="footer-logo">
+          <div>
+            <h5>Dream Island Travels &amp; Tours Pvt Ltd</h5>
+            <span class="footer-sub">Tailor-Made Holidays across Sri Lanka</span>
+          </div>
+        </div>
+        <div class="footer-tagline text-md-end">
+          <span class="d-block footer-tagline-main">Culture &bull; Wildlife &bull; Adventures</span>
+          <span class="footer-tagline-sub">&ldquo;Your Dream, Our Destination&rdquo;</span>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-center justify-content-between">
+        <div class="col-lg-8">
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-start gap-2">
+              <span>📍</span>
+              <a href="https://maps.app.goo.gl/XyPVxmkMoir6SZHaA?g_st=awb" target="_blank" rel="noopener" class="footer-contact-text">357/1, Waththegedara, Vithikuliya, Sri Lanka</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span>✉️</span>
+              <a href="mailto:Info@dreamislandtravels.com" class="footer-contact-text">Info@dreamislandtravels.com</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span>🦉</span>
+              <a href="https://www.tripadvisor.co.uk/Attraction_Review-g293962-d34504009-Reviews-Dream_Island_Travels_Tours_Pvt_Ltd-Colombo_Western_Province.html" target="_blank" rel="noopener" class="footer-contact-text">TripAdvisor Reviews</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-lg-end">
+          <div class="contact-call-card d-inline-block text-start w-100">
+            <span class="label">Contact Us</span>
+            <a href="tel:+94743935369" class="phone-link d-block">+94 74 393 5369</a>
+            <a href="tel:+94767070706" class="phone-link d-block">+94 76 707 0706</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">&copy; Dream Island Travels &amp; Tours Pvt Ltd. All rights reserved. | Reg. No. PV00301414</div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
